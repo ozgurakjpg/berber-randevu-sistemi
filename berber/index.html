@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erdi Erdem Hair Center - Profesyonel Erkek Kuaförü & Randevu Sistemi</title>
+    <meta name="description" content="Bartın Merkez'de profesyonel erkek kuaförü hizmetleri. Saç kesimi, sakal tasarımı ve cilt bakımı için hemen online randevunuzu oluşturun.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-gold">ERDİ ERDEM</span>
+                <span class="logo-sub">HAIR CENTER</span>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <a href="#home" class="nav-link active">Ana Sayfa</a>
+                <a href="#services" class="nav-link">Hizmetler</a>
+                <a href="#gallery" class="nav-link">Galeri</a>
+                <a href="#booking" class="nav-link highlight">Randevu Al</a>
+                <a href="#my-appointments" class="nav-link" id="navAppointmentsLink">Randevularım <span class="badge" id="apptsCount">0</span></a>
+                <a href="#contact" class="nav-link">İletişim</a>
+            </nav>
+            <button class="mobile-nav-toggle" aria-label="Menüyü Aç/Kapat" id="navToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-subtitle"><i class="fa-solid fa-scissors gold-text"></i> BARTIN'IN PRESTİJLİ ERKEK SALONU</span>
+                <h1 class="hero-title">Tarzınızı Yeniden Tanımlayın</h1>
+                <p class="hero-desc">Modern saç kesimleri, sakal tasarımı ve kişisel bakım hizmetleriyle kendinizi şımartın. Profesyonel ekibimiz ve lüks salonumuzla hizmetinizdeyiz.</p>
+                <div class="hero-actions">
+                    <a href="#booking" class="btn btn-primary btn-lg"><i class="fa-solid fa-calendar-check"></i> Hemen Randevu Al</a>
+                    <a href="tel:05052734069" class="btn btn-outline btn-lg"><i class="fa-solid fa-phone"></i> 0505 273 4069</a>
+                </div>
+            </div>
+            <div class="hero-badge-box">
+                <div class="badge-item">
+                    <span class="badge-num">100%</span>
+                    <span class="badge-lbl">Müşteri Memnuniyeti</span>
+                </div>
+                <div class="badge-item">
+                    <span class="badge-num">10+</span>
+                    <span class="badge-lbl">Yıllık Tecrübe</span>
+                </div>
+            </div>
+        </div>
+        <a href="#services" class="scroll-down" aria-label="Aşağı Kaydır">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Neler Sunuyoruz?</span>
+                <h2 class="section-title">Hizmetlerimiz & Fiyatlarımız</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+                    <h3>Saç Kesimi</h3>
+                    <p class="service-details">Kafa yapınıza ve tarzınıza uygun modern veya klasik saç kesimi, yıkama ve fön dahil.</p>
+                    <div class="service-meta">
+                        <span class="service-duration"><i class="fa-regular fa-clock"></i> 30 dk</span>
+                        <span class="service-price">250 TL</span>
+                    </div>
+                    <button class="btn btn-sm btn-gold select-service-shortcut" data-service-id="1">Randevu Seç</button>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3>Sakal Tasarımı</h3>
+                    <p class="service-details">Sakal tıraşı, sakal hattı düzeltme, makine veya ustura ile şekillendirme ve özel sakal yağı bakımı.</p>
+                    <div class="service-meta">
+                        <span class="service-duration"><i class="fa-regular fa-clock"></i> 20 dk</span>
+                        <span class="service-price">150 TL</span>
+                    </div>
+                    <button class="btn btn-sm btn-gold select-service-shortcut" data-service-id="2">Randevu Seç</button>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card active-card">
+                    <div class="popular-badge">Popüler Kombin</div>
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <h3>Saç & Sakal Kombin</h3>
+                    <p class="service-details">Premium saç kesimi, yıkama, fön, sakal tasarımı, kulak/burun ağdası ve ferahlatıcı tonik uygulaması.</p>
+                    <div class="service-meta">
+                        <span class="service-duration"><i class="fa-regular fa-clock"></i> 50 dk</span>
+                        <span class="service-price">350 TL</span>
+                    </div>
+                    <button class="btn btn-sm btn-primary select-service-shortcut" data-service-id="3">Randevu Seç</button>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card">
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+                    <h3>Saç Yıkama & Fön</h3>
+                    <p class="service-details">Özel şampuanlarla yıkama, baş masajı ve istediğiniz tarza uygun fön çekimi.</p>
+                    <div class="service-meta">
+                        <span class="service-duration"><i class="fa-regular fa-clock"></i> 15 dk</span>
+                        <span class="service-price">100 TL</span>
+                    </div>
+                    <button class="btn btn-sm btn-gold select-service-shortcut" data-service-id="4">Randevu Seç</button>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="service-card">
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                    <h3>Cilt Bakımı & Maske</h3>
+                    <p class="service-details">Siyah nokta temizliği, yüz maskesi, buhar tedavisi ve nemlendirici masaj uygulaması.</p>
+                    <div class="service-meta">
+                        <span class="service-duration"><i class="fa-regular fa-clock"></i> 30 dk</span>
+                        <span class="service-price">150 TL</span>
+                    </div>
+                    <button class="btn btn-sm btn-gold select-service-shortcut" data-service-id="5">Randevu Seç</button>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="service-card">
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3>Damat Tıraşı Paketi</h3>
+                    <p class="service-details">Düğün gününüze özel detaylı saç ve sakal tasarımı, cilt bakımı, maske ve özel ikramlar.</p>
+                    <div class="service-meta">
+                        <span class="service-duration"><i class="fa-regular fa-clock"></i> 90 dk</span>
+                        <span class="service-price">1000 TL</span>
+                    </div>
+                    <button class="btn btn-sm btn-gold select-service-shortcut" data-service-id="6">Randevu Seç</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Salonumuz</span>
+                <h2 class="section-title">Erdi Erdem Hair Center</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="gallery-desc">
+                <p>Sizleri en iyi şekilde ağırlamak için tasarlanmış lüks ve konforlu salonumuzdan kareler. Hijyen, kalite ve estetiğin buluştuğu doğru adres.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-image-index="0">
+                    <img src="assets/images/salon1.png" alt="Erdi Erdem Hair Center Salon İçi Görünüm - Koltuklar ve Aynalar">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>Büyüt</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image-index="1">
+                    <img src="assets/images/salon2.png" alt="Erdi Erdem Hair Center Salon İçi Görünüm - Detaylı Bakış">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <span>Büyüt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-nav prev" aria-label="Önceki Görsel"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-content" id="lightboxImg" src="" alt="Büyütülmüş Görsel">
+            <div id="lightboxCaption" class="lightbox-caption"></div>
+        </div>
+        <button class="lightbox-nav next" aria-label="Sonraki Görsel"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Booking Section (Interactive Wizard) -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Hızlı ve Kolay</span>
+                <h2 class="section-title">Online Randevu Oluştur</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Booking Wizard Card -->
+            <div class="booking-wizard-card">
+                <!-- Progress Indicator -->
+                <div class="wizard-steps-indicator">
+                    <div class="step-indicator active" data-step="1">
+                        <span class="step-num">1</span>
+                        <span class="step-label">Hizmetler</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step-indicator" data-step="2">
+                        <span class="step-num">2</span>
+                        <span class="step-label">Stilist</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step-indicator" data-step="3">
+                        <span class="step-num">3</span>
+                        <span class="step-label">Tarih & Saat</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step-indicator" data-step="4">
+                        <span class="step-num">4</span>
+                        <span class="step-label">İletişim</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step-indicator" data-step="5">
+                        <span class="step-num">5</span>
+                        <span class="step-label">Özet</span>
+                    </div>
+                </div>
+
+                <!-- Wizard Body -->
+                <div class="wizard-body">
+                    
+                    <!-- STEP 1: SERVICES -->
+                    <div class="wizard-step-content active" id="step1">
+                        <h3>Hizmet Seçimi</h3>
+                        <p class="step-instruction">Lütfen yaptırmak istediğiniz hizmetleri seçin (Birden fazla seçebilirsiniz):</p>
+                        
+                        <div class="services-list-form">
+                            <label class="service-checkbox-card" data-service-id="1">
+                                <input type="checkbox" name="services" value="1" data-name="Saç Kesimi" data-price="250" data-duration="30">
+                                <span class="custom-checkbox"></span>
+                                <div class="svc-info">
+                                    <span class="svc-name">Saç Kesimi</span>
+                                    <span class="svc-desc">Yıkama ve Fön Dahil</span>
+                                </div>
+                                <div class="svc-meta-info">
+                                    <span class="svc-duration">30 dk</span>
+                                    <span class="svc-price">250 TL</span>
+                                </div>
+                            </label>
+                            
+                            <label class="service-checkbox-card" data-service-id="2">
+                                <input type="checkbox" name="services" value="2" data-name="Sakal Tasarımı" data-price="150" data-duration="20">
+                                <span class="custom-checkbox"></span>
+                                <div class="svc-info">
+                                    <span class="svc-name">Sakal Tasarımı</span>
+                                    <span class="svc-desc">Makine/Ustura ile Şekillendirme</span>
+                                </div>
+                                <div class="svc-meta-info">
+                                    <span class="svc-duration">20 dk</span>
+                                    <span class="svc-price">150 TL</span>
+                                </div>
+                            </label>
+                            
+                            <label class="service-checkbox-card" data-service-id="3">
+                                <input type="checkbox" name="services" value="3" data-name="Saç & Sakal Kombin" data-price="350" data-duration="50">
+                                <span class="custom-checkbox"></span>
+                                <div class="svc-info">
+                                    <span class="svc-name">Saç & Sakal Kombin</span>
+                                    <span class="svc-desc">Popüler Komple Bakım</span>
+                                </div>
+                                <div class="svc-meta-info">
+                                    <span class="svc-duration">50 dk</span>
+                                    <span class="svc-price">350 TL</span>
+                                </div>
+                            </label>
+                            
+                            <label class="service-checkbox-card" data-service-id="4">
+                                <input type="checkbox" name="services" value="4" data-name="Saç Yıkama & Fön" data-price="100" data-duration="15">
+                                <span class="custom-checkbox"></span>
+                                <div class="svc-info">
+                                    <span class="svc-name">Saç Yıkama & Fön</span>
+                                    <span class="svc-desc">Şampuan + Fön Stil</span>
+                                </div>
+                                <div class="svc-meta-info">
+                                    <span class="svc-duration">15 dk</span>
+                                    <span class="svc-price">100 TL</span>
+                                </div>
+                            </label>
+                            
+                            <label class="service-checkbox-card" data-service-id="5">
+                                <input type="checkbox" name="services" value="5" data-name="Cilt Bakımı & Maske" data-price="150" data-duration="30">
+                                <span class="custom-checkbox"></span>
+                                <div class="svc-info">
+                                    <span class="svc-name">Cilt Bakımı & Maske</span>
+                                    <span class="svc-desc">Siyah Nokta Temizliği ve Buhar</span>
+                                </div>
+                                <div class="svc-meta-info">
+                                    <span class="svc-duration">30 dk</span>
+                                    <span class="svc-price">150 TL</span>
+                                </div>
+                            </label>
+                            
+                            <label class="service-checkbox-card" data-service-id="6">
+                                <input type="checkbox" name="services" value="6" data-name="Damat Tıraşı Paketi" data-price="1000" data-duration="90">
+                                <span class="custom-checkbox"></span>
+                                <div class="svc-info">
+                                    <span class="svc-name">Damat Tıraşı Paketi</span>
+                                    <span class="svc-desc">Düğün Gününe Özel Komple Bakım</span>
+                                </div>
+                                <div class="svc-meta-info">
+                                    <span class="svc-duration">90 dk</span>
+                                    <span class="svc-price">1000 TL</span>
+                                </div>
+                            </label>
+                        </div>
+                        
+                        <div class="step-summary-bar">
+                            <div>Seçilen Hizmet: <span id="selectedCount">0</span> adet</div>
+                            <div>Toplam Süre: <span id="totalDuration">0</span> dk</div>
+                            <div class="total-text">Toplam Tutar: <span id="totalPrice">0</span> TL</div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: STYLIST -->
+                    <div class="wizard-step-content" id="step2">
+                        <h3>Stilist Seçimi</h3>
+                        <p class="step-instruction">Hizmet alacağınız berberinizi seçin:</p>
+                        
+                        <div class="stylists-grid">
+                            <div class="stylist-card active-stylist" data-stylist-name="Erdi Erdem">
+                                <div class="stylist-avatar">
+                                    <i class="fa-solid fa-user-ninja"></i>
+                                </div>
+                                <h4>Erdi Erdem</h4>
+                                <span class="stylist-role">Kurucu / Baş Berber</span>
+                                <p class="stylist-desc">Saç tasarımı ve sakal şekillendirmede uzman, 10+ yıllık tecrübe.</p>
+                                <span class="stylist-select-badge"><i class="fa-solid fa-circle-check"></i> Seçildi</span>
+                            </div>
+
+                            <div class="stylist-card" data-stylist-name="Ahmet Yılmaz">
+                                <div class="stylist-avatar">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+                                <h4>Ahmet Yılmaz</h4>
+                                <span class="stylist-role">Kıdemli Stilist</span>
+                                <p class="stylist-desc">Modern saç kesimleri ve trend saç renklendirmelerinde uzman.</p>
+                                <span class="stylist-select-badge"><i class="fa-solid fa-circle-check"></i> Seç</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3: DATE & TIME -->
+                    <div class="wizard-step-content" id="step3">
+                        <h3>Tarih & Saat Seçimi</h3>
+                        <p class="step-instruction">Lütfen size uygun bir tarih ve müsait bir saat dilimi belirleyin:</p>
+                        
+                        <div class="datetime-picker-wrapper">
+                            <!-- Custom Calendar Grid -->
+                            <div class="calendar-container">
+                                <div class="calendar-header">
+                                    <button type="button" id="prevMonthBtn" class="calendar-nav-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <span id="calendarMonthYear" class="calendar-month-year">Haziran 2026</span>
+                                    <button type="button" id="nextMonthBtn" class="calendar-nav-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
+                                <div class="calendar-weekdays">
+                                    <div>Pzt</div><div>Sal</div><div>Çar</div><div>Per</div><div>Cum</div><div>Cmt</div><div class="sunday">Paz</div>
+                                </div>
+                                <div class="calendar-days" id="calendarDays">
+                                    <!-- Dynamic Days -->
+                                </div>
+                                <div class="calendar-legend">
+                                    <span class="legend-item"><span class="legend-dot available"></span> Müsait</span>
+                                    <span class="legend-item"><span class="legend-dot selected"></span> Seçili</span>
+                                    <span class="legend-item"><span class="legend-dot disabled"></span> Kapalı/Geçmiş</span>
+                                </div>
+                            </div>
+
+                            <!-- Time Slots Grid -->
+                            <div class="time-slots-container">
+                                <h4>Seçilen Tarih: <span id="slotsSelectedDateDisplay">Tarih Seçiniz</span></h4>
+                                <p class="slot-info-text">Müsait saat dilimlerinden birini seçin (Pazar günleri kapalıyız):</p>
+                                <div class="time-slots-grid" id="timeSlotsGrid">
+                                    <div class="no-date-msg">Takvimden bir tarih seçtiğinizde saatler burada listelenecektir.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 4: CONTACT INFO -->
+                    <div class="wizard-step-content" id="step4">
+                        <h3>İletişim Bilgileri</h3>
+                        <p class="step-instruction">Size ulaşabileceğimiz ve randevunuzu teyit edebileceğimiz bilgileri girin:</p>
+                        
+                        <div class="contact-form-group">
+                            <div class="form-control">
+                                <label for="custName"><i class="fa-regular fa-user"></i> Adınız Soyadınız *</label>
+                                <input type="text" id="custName" placeholder="Örn. Ahmet Yılmaz" required>
+                                <span class="error-msg" id="nameError">Ad Soyad alanı gereklidir.</span>
+                            </div>
+                            
+                            <div class="form-control">
+                                <label for="custPhone"><i class="fa-solid fa-phone"></i> Telefon Numaranız *</label>
+                                <input type="tel" id="custPhone" placeholder="Örn. 0505 273 4069" required>
+                                <span class="error-msg" id="phoneError">Lütfen geçerli bir telefon numarası girin.</span>
+                            </div>
+                            
+                            <div class="form-control">
+                                <label for="custNotes"><i class="fa-regular fa-comment-dots"></i> İletmek İstediğiniz Not (İsteğe Bağlı)</label>
+                                <textarea id="custNotes" placeholder="Saç kesiminde özel bir talebiniz var mı? Buraya yazabilirsiniz..." rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 5: SUMMARY -->
+                    <div class="wizard-step-content" id="step5">
+                        <h3>Randevu Özeti</h3>
+                        <p class="step-instruction">Lütfen randevu detaylarınızı kontrol edin. WhatsApp ile gönder butonuna tıkladığınızda randevunuz kaydedilecek ve doğrudan WhatsApp'a yönlendirileceksiniz.</p>
+                        
+                        <div class="summary-card">
+                            <div class="summary-row">
+                                <span class="summary-lbl"><i class="fa-solid fa-scissors"></i> Seçilen Hizmetler:</span>
+                                <span class="summary-val" id="sumServices">-</span>
+                            </div>
+                            <div class="summary-row">
+                                <span class="summary-lbl"><i class="fa-regular fa-clock"></i> Toplam Süre:</span>
+                                <span class="summary-val font-highlight" id="sumDuration">0 dk</span>
+                            </div>
+                            <div class="summary-row">
+                                <span class="summary-lbl"><i class="fa-solid fa-user-ninja"></i> Berber / Stilist:</span>
+                                <span class="summary-val" id="sumStylist">-</span>
+                            </div>
+                            <div class="summary-row">
+                                <span class="summary-lbl"><i class="fa-regular fa-calendar-days"></i> Tarih & Saat:</span>
+                                <span class="summary-val font-highlight" id="sumDateTime">-</span>
+                            </div>
+                            <div class="summary-row border-top">
+                                <span class="summary-lbl"><i class="fa-regular fa-user"></i> Müşteri:</span>
+                                <span class="summary-val" id="sumCustomer">-</span>
+                            </div>
+                            <div class="summary-row">
+                                <span class="summary-lbl"><i class="fa-solid fa-phone"></i> Telefon:</span>
+                                <span class="summary-val" id="sumPhone">-</span>
+                            </div>
+                            <div class="summary-row" id="sumNoteRow">
+                                <span class="summary-lbl"><i class="fa-regular fa-comment-dots"></i> Not:</span>
+                                <span class="summary-val" id="sumNote">-</span>
+                            </div>
+                            <div class="summary-total-box">
+                                <span>Toplam Tutar</span>
+                                <span id="sumTotal" class="total-amount">0 TL</span>
+                            </div>
+                        </div>
+
+                        <div class="whatsapp-alert-box">
+                            <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+                            <div>
+                                <strong>Randevu Onay Süreci:</strong> Randevunuz tarayıcınıza kaydedilecek ve onaylanması için otomatik olarak **WhatsApp** mesajı oluşturulacaktır. WhatsApp üzerinden mesajı gönderdiğinizde randevunuz kesinleşecektir.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Wizard Footer / Control Buttons -->
+                <div class="wizard-footer">
+                    <button type="button" class="btn btn-outline" id="prevBtn" disabled><i class="fa-solid fa-arrow-left"></i> Geri</button>
+                    <button type="button" class="btn btn-primary" id="nextBtn">İleri <i class="fa-solid fa-arrow-right"></i></button>
+                    <button type="button" class="btn btn-success hidden" id="submitBtn"><i class="fa-brands fa-whatsapp"></i> Randevuyu Onayla & Gönder</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointments Tracker (Randevularım) -->
+    <section id="my-appointments" class="appointments-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Kayıtlı Rezervasyonlarınız</span>
+                <h2 class="section-title">Randevularım</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="appointments-card">
+                <p class="appts-intro">Bu cihaz üzerinden daha önce oluşturduğunuz randevular aşağıda listelenmiştir. WhatsApp ile onaylanmayan randevular geçersiz sayılabilir.</p>
+                <div id="appointmentsList" class="appointments-list">
+                    <div class="no-appointments">
+                        <i class="fa-solid fa-calendar-xmark icon-large"></i>
+                        <p>Henüz kayıtlı bir randevunuz bulunmamaktadır.</p>
+                        <a href="#booking" class="btn btn-gold btn-sm">Hemen Randevu Al</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Ulaşım & İletişim</span>
+                <h2 class="section-title">Bizimle İletişime Geçin</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Info Column -->
+                <div class="contact-info-col">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-details">
+                            <h3>Adres</h3>
+                            <p>Kırtepe, Hamam Cd. 1/B, 74100 Merkez/Bartın</p>
+                            <a href="https://maps.google.com/?q=Kırtepe,+Hamam+Cd.+1/B,+74100+Merkez/Bartın" target="_blank" class="map-link">Haritada Göster <i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-details">
+                            <h3>Telefon</h3>
+                            <p>0505 273 4069</p>
+                            <a href="tel:05052734069" class="call-link">Hemen Ara <i class="fa-solid fa-phone-volume"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div class="info-details">
+                            <h3>Çalışma Saatleri</h3>
+                            <div class="hours-row">
+                                <span>Pazartesi - Cumartesi:</span>
+                                <span>09:00 - 20:00</span>
+                            </div>
+                            <div class="hours-row closed">
+                                <span>Pazar:</span>
+                                <span>KAPALI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map / Location Column -->
+                <div class="contact-map-col">
+                    <div class="map-container">
+                        <!-- Embed standard Google Maps with address -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.741065187121!2d32.336181!3d41.636181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409b5523bb800001%3A0x6b2eb35a60e1dcd7!2sK%C4%B1rtepe%2C%20Hamam%20Cd.%201%2FB%2C%2074100%20Merkez%2FBart%C4%B1n!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Erdi Erdem Hair Center Google Maps Haritası">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-gold">ERDİ ERDEM</span>
+                    <span class="logo-sub">HAIR CENTER</span>
+                </a>
+                <p>Kişisel stilinize değer katan modern saç kesimi ve sakal tasarımlarıyla Bartın'da lüksün ve kalitenin adresi.</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="tel:05052734069" aria-label="Telefon Arama"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Hızlı Menü</h3>
+                <a href="#home">Ana Sayfa</a>
+                <a href="#services">Hizmetler</a>
+                <a href="#gallery">Galeri</a>
+                <a href="#booking">Randevu Al</a>
+                <a href="#contact">İletişim</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>İletişim Bilgileri</h3>
+                <p><i class="fa-solid fa-location-dot gold-text"></i> Kırtepe, Hamam Cd. 1/B, 74100 Bartın</p>
+                <p><i class="fa-solid fa-phone gold-text"></i> 0505 273 4069</p>
+                <p><i class="fa-solid fa-envelope gold-text"></i> info@erdierdemhaircenter.com</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Erdi Erdem Hair Center. Tüm Hakları Saklıdır. | Designed for Premium Salons</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Appointment Success Modal -->
+    <div id="successModal" class="success-modal">
+        <div class="success-modal-content">
+            <div class="success-modal-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h2>Randevunuz Kaydedildi!</h2>
+            <p>Randevunuz başarıyla tarayıcınıza kaydedildi ve WhatsApp yönlendirmesi hazırlanıyor.</p>
+            <p class="success-subtext">Eğer otomatik yönlendirme gerçekleşmezse veya engellenirse, lütfen aşağıdaki <strong>WhatsApp'a Git</strong> butonuna tıklayarak mesajı berberinize iletin.</p>
+            
+            <div class="success-modal-actions">
+                <button type="button" id="closeSuccessBtn" class="btn btn-outline">Kapat</button>
+                <a id="goToWhatsappBtn" href="#" target="_blank" class="btn btn-success">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp'a Git
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
